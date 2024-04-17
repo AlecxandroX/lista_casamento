@@ -60,6 +60,7 @@ header {
   p {
     text-align: center; /* centraliza o texto */
     margin-bottom: 10px; /* adiciona espaço abaixo do parágrafo */
+      color: #0f0a0a; /* Cor do texto */
   }
   /* Estilizando o link */
 a {
@@ -87,7 +88,7 @@ a:hover {
 /* Estilizando o parágrafo */
 p {
   font-style: italic; /* Deixando em itálico */
-  color: #888; /* Cor do texto */
+  color: #0f0a0a; /* Cor do texto */
 }
 /* Estilizando o link */
 a {
