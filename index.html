@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja Online</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Presentes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fotos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-4">
+    <h1>Presentes para Alecx e Yohanna: Faça sua escolha!</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/Liquidificador.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Liquidificador </h5>
+            <p class="card-text">R$ 200,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Liquidificador ', 200.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/Batedeira.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Batedeira</h5>
+            <p class="card-text">R$ 200,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Batedeira', 200.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/Cafeteira.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Cafeteira </h5>
+            <p class="card-text">R$ 250,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Cafeteira ', 250,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+            <img src="./fotos/panela de arroz.jpeg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Panela elétrica de arroz</h5>
+            <p class="card-text">R$ 270,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Panela elétrica de arroz', 270,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/forno eletrico.jpeg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Forno elétrico</h5>
+            <p class="card-text">R$ 500,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Forno elétrico', 500,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/grill.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Grill elétrico </h5>
+            <p class="card-text">R$ 300,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Grill elétrico', 300.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/torradeira.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Torradeira </h5>
+            <p class="card-text">R$ 230,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Torradeira ', 230.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/maquina de lavar.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Máquina de lavar louça </h5>
+            <p class="card-text">R$ 2500,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Máquina de lavar louça', 2500.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/aspirador.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Aspirador de pó</h5>
+            <p class="card-text">R$ 350,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Aspirador de pó', 350,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/ferro de passar.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Ferro de passar roupa a seco </h5>
+            <p class="card-text">R$ 250,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Ferro de passar roupa a seco ', 250.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/Fritadeira elétrica.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">air fryer</h5>
+            <p class="card-text">R$ 350,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Fritadeira elétrica', 350,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/purificador.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Purificador de água</h5>
+            <p class="card-text">R$ 620,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Purificador de água ', 620,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/climatizador.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Climatizador de ar</h5>
+            <p class="card-text">R$ 350,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Climatizador de ar', 350.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/sofa.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Sofá</h5>
+            <p class="card-text">R$ 2000,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Sofá 2000,00', 2000.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/geladeira.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Geladeira </h5>
+            <p class="card-text">R$ 3000,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Geladeira ', 3000.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/cozinha.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Cozinha</h5>
+            <p class="card-text">R$ 1800,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Cozinha ', 1800,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/mesa.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Mesa </h5>
+            <p class="card-text">R$ 1700,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Mesa ', 1700.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/guarda roupas.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Guarda roupas</h5>
+            <p class="card-text">R$ 1800,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Guarda roupas', 1800,00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/TV.png" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">TV</h5>
+            <p class="card-text">R$ 2000,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('TV', 2000.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/RAQUE.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Raque para tv</h5>
+            <p class="card-text">R$ 700,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Raque para tv ', 700.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/mesa de centro.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Mesa de centro</h5>
+            <p class="card-text">R$ 650,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('TV', 650.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/cobertor.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Cobertor </h5>
+            <p class="card-text">R$ 300,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Cobertor ', 300.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/lençoes.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Lençóis </h5>
+            <p class="card-text">R$ 250,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Lençóis', 250.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/toalhas.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Conjunto de toalhas</h5>
+            <p class="card-text">R$ 200,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Conjunto de toalhas', 200.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/ar.jpeg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Ar condicionado</h5>
+            <p class="card-text">R$ 1000,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Ar condicionado', 1000.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/espelho.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Espelho quarto</h5>
+            <p class="card-text">R$ 200,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Espelho quarto', 200.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/armario.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Armário </h5>
+            <p class="card-text">R$ 500,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Armário  ', 500.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./fotos/panelas.webp" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Panelas</h5>
+            <p class="card-text">R$ 400,00</p>
+            <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Panelas ', 400.00)">Comprar</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Adicione os outros produtos aqui -->
+    </div>
+  </div>
+
+
+  <div class="container-float">
+    <h2>Carrinho de Compras</h2>
+    <ul id="carrinho" class="list-group">
+        <!-- Itens do carrinho aqui -->
+    </ul>
+    <p>Total: R$ <span id="totalCarrinho">0.00</span></p>
+    <button class="btn btn-danger mt-2" onclick="limparCarrinho()">Limpar Carrinho</button>
+    <button class="btn btn-success mt-2" onclick="finalizarCompra()">Finalizar Compra</button>
+</div>
+
+ 
+
+  <div id="pagamento" class="container-float mt-4 d-none">
+    <h2>Forma de Pagamento</h2>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="formaPagamento" id="pix" value="pix">
+      <label class="form-check-label" for="pix">
+        PIX
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="formaPagamento" id="Dinheiro" value="Dinheiro">
+      <label class="form-check-label" for="Dinheiro">
+        Dinheiro
+      </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="formaPagamento" id="cartao" value="cartao">
+        <label class="form-check-label" for="cartao">
+            Cartão
+        </label>
+      </div>
+    <button id="pagar" class="btn btn-primary mt-3">Pagar</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    function adicionarAoCarrinho(produto, preco) {
+      var item = document.createElement('li');
+      item.className = 'list-group-item';
+      item.textContent = produto + ' - R$ ' + preco.toFixed(2);
+    
+      var botaoRemover = document.createElement('button');
+      botaoRemover.className = 'btn btn-danger btn-sm float-right';
+      botaoRemover.textContent = 'Remover';
+      botaoRemover.onclick = function() {
+        item.remove();
+        atualizarTotalCarrinho();
+      };
+    
+      item.appendChild(botaoRemover);
+      document.getElementById('carrinho').appendChild(item);
+      atualizarTotalCarrinho();
+    }
+    
+    function limparCarrinho() {
+      document.getElementById('carrinho').innerHTML = '';
+      atualizarTotalCarrinho();
+    }
+    
+    function finalizarCompra() {
+      document.getElementById('pagamento').classList.remove('d-none');
+    }
+    
+    function atualizarTotalCarrinho() {
+      var total = 0;
+      var items = document.querySelectorAll('#carrinho li');
+      items.forEach(function(item) {
+        var preco = parseFloat(item.textContent.split('R$ ')[1]);
+        total += preco;
+      });
+      document.getElementById('totalCarrinho').textContent = total.toFixed(2);
+    }
+    
+    document.getElementById('pagar').addEventListener('click', function() {
+      var formaPagamento = document.querySelector('input[name="formaPagamento"]:checked').value;
+      if (formaPagamento === 'pix') {
+        // Mostrar imagem e mensagem para pagamento via PIX
+        var mensagem = document.createElement('div');
+        mensagem.innerHTML = '<img src="./fotos/pix.png" alt="PIX">' +
+                             '<p>Realize o pagamento por PIX no QR do valor: R$ ' + document.getElementById('totalCarrinho').textContent + '.</p>' +
+                             '<p>Após, envie o comprovante pelo <a href="https://api.whatsapp.com/send?phone=5549998220444&text=Comprovante%20do%20pagamento%20via%20PIX%3A">Whatsapp</a>.</p>'
+        document.body.appendChild(mensagem);
+      } else if (formaPagamento === 'Dinheiro') {
+        // Mostrar imagem e mensagem para pagamento em dinheiro
+        var mensagem = document.createElement('div');
+        mensagem.innerHTML = '<a href="https://api.whatsapp.com/send?phone=5549998220444&text=Comprovante%20do%20pagamento%20via%20PIX%3A">Clique aqui para pagar com dinheiro</a><p>Agradeço desde já</p>';
+        document.body.appendChild(mensagem);
+      } else if (formaPagamento === 'cartao') { // Corrigido para 'cartao' em vez de 'Cartao'
+        // Mostrar imagem e mensagem para pagamento com cartão
+        var mensagem = document.createElement('div');
+        mensagem.innerHTML = '<a href="https://wa.me/554999326870?text=Ol%C3%A1%2C+quero+realizar+o+pagamento+por+cart%C3%A3o%2C+pode+me+enviar+o+link%3F">Clique aqui para pagar com cartão</a><p>Agradeço desde já</p>';
+        document.body.appendChild(mensagem);
+      }
+    
+      limparCarrinho();
+      document.getElementById('pagamento').classList.add('d-none');
+    });
+    </script>
+     <script>
+        // Adicionando um evento de clique ao botão
+        document.getElementById('pagar').addEventListener('click', function() {
+            // Rola a página para baixo
+            window.scrollTo({
+                top: document.body.scrollHeight, // Rola para o fim da página
+                behavior: 'smooth' // Adiciona uma animação suave
+            });
+        });
+    </script>
+    
+
+
+</body>
+</html>

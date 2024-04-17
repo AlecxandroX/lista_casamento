@@ -1,0 +1,127 @@
+/* Estilos para o header */
+/* Estilo para o cabeçalho */
+header {
+    background-color: #c49c9c; /* Cor de fundo */
+    padding: 15px 0; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Estilo para o logo */
+  .navbar-brand {
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Estilo para os links da barra de navegação */
+  .navbar-nav .nav-item .nav-link {
+    font-size: 18px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    transition: color 0.3s; /* Transição suave da cor */
+  }
+  
+  /* Estilo para os links da barra de navegação quando hover */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Cor do texto quando hover */
+  }
+  
+  
+  /* Estilos para os cards de produtos */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Defina a altura máxima desejada para as imagens */
+    object-fit: contain; /* Garante que a imagem seja redimensionada para caber dentro do card sem distorção */
+  }
+  
+  /* Estilos para os cards de produtos */
+  .card {
+    height: 350px; /* Defina a altura desejada para os cards */
+  }
+  img {
+    display: block;
+    margin: 0 auto; /* centraliza a imagem horizontalmente */
+    max-width: 100%; /* garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* mantém a proporção da imagem */
+  }
+  
+  p {
+    text-align: center; /* centraliza o texto */
+    margin-bottom: 10px; /* adiciona espaço abaixo do parágrafo */
+  }
+  /* Estilizando o link */
+a {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Removendo sublinhado */
+    font-weight: bold; /* Deixando em negrito */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+  }
+  
+  /* Estilizando o parágrafo */
+ /* Estilizando o link */
+a {
+  color: #007bff; /* Cor do link */
+  text-decoration: none; /* Removendo sublinhado */
+  font-weight: bold; /* Deixando em negrito */
+}
+
+a:hover {
+  text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+}
+
+/* Estilizando o parágrafo */
+p {
+  font-style: italic; /* Deixando em itálico */
+  color: #888; /* Cor do texto */
+}
+/* Estilizando o link */
+a {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Removendo sublinhado */
+    font-weight: bold; /* Deixando em negrito */
+    font-size: 18px; /* Tamanho da fonte */
+    align-items: center; /* Apenas se estiver usando flexbox */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+  }
+  .container-float {
+    position: fixed; /* ou position: absolute; */
+    top: 20%; /* ou qualquer outro valor de topo desejado */
+    left: 85%; /* ou qualquer outro valor de esquerda desejado */
+    transform: translate(-50%, -50%); /* para centralizar o elemento */
+    background-color: #c49c9c; /* ou qualquer outra cor de fundo desejada */
+    padding: 20px; /* ou qualquer outro valor de preenchimento desejado */
+    border: 1px solid #ccc; /* ou qualquer outro estilo de borda desejado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* sombra opcional */
+    z-index: 999; /* para garantir que o elemento flutuante esteja acima de outros elementos */
+    max-width: 80%; /* ou qualquer outro valor máximo de largura desejado */
+}  
+.content {
+    margin-top: 1000px; /* Espaço antes do botão para rolar */
+}
+  
+ 
+  
+  
+  
+  
+  
+  
+    
