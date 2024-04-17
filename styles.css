@@ -60,7 +60,7 @@ header {
   p {
     text-align: center; /* centraliza o texto */
     margin-bottom: 10px; /* adiciona espaço abaixo do parágrafo */
-      color: #0f0a0a; /* Cor do texto */
+    color: #333;
   }
   /* Estilizando o link */
 a {
@@ -117,7 +117,40 @@ a {
 .content {
     margin-top: 1000px; /* Espaço antes do botão para rolar */
 }
-  
+.custom-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente oculto */
+    z-index: 1000; /* Z-index alto para aparecer na frente */
+}
+
+.custom-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+.card-float {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    max-width: 80%;
+    overflow: auto;
+}
+
  
   
   
