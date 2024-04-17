@@ -438,28 +438,31 @@
     }
     
     document.getElementById('pagar').addEventListener('click', function() {
-      var formaPagamento = document.querySelector('input[name="formaPagamento"]:checked').value;
-      if (formaPagamento === 'pix') {
-        // Mostrar imagem e mensagem para pagamento via PIX
-        var mensagem = document.createElement('div');
-        mensagem.innerHTML = '<img src="./fotos/pix.png" alt="PIX">' +
-                             '<p>Realize o pagamento por PIX no QR do valor: R$ ' + document.getElementById('totalCarrinho').textContent + '.</p>' +
-                             '<p>Após, envie o comprovante pelo <a href="https://api.whatsapp.com/send?phone=5549998220444&text=Comprovante%20do%20pagamento%20via%20PIX%3A">Whatsapp</a>.</p>'
-        document.body.appendChild(mensagem);
-      } else if (formaPagamento === 'Dinheiro') {
-        // Mostrar imagem e mensagem para pagamento em dinheiro
-        var mensagem = document.createElement('div');
-        mensagem.innerHTML = '<a href="https://api.whatsapp.com/send?phone=5549998220444&text=Comprovante%20do%20pagamento%20via%20PIX%3A">Clique aqui para pagar com dinheiro</a><p>Agradeço desde já</p>';
-        document.body.appendChild(mensagem);
-      } else if (formaPagamento === 'cartao') { // Corrigido para 'cartao' em vez de 'Cartao'
-        // Mostrar imagem e mensagem para pagamento com cartão
-        var mensagem = document.createElement('div');
-        mensagem.innerHTML = '<a href="https://wa.me/554999326870?text=Ol%C3%A1%2C+quero+realizar+o+pagamento+por+cart%C3%A3o%2C+pode+me+enviar+o+link%3F">Clique aqui para pagar com cartão</a><p>Agradeço desde já</p>';
-        document.body.appendChild(mensagem);
-      }
+        var formaPagamento = document.querySelector('input[name="formaPagamento"]:checked').value;
+        if (formaPagamento === 'pix') {
+            // Mostrar imagem e mensagem para pagamento via PIX
+            var mensagem = document.createElement('div');
+            mensagem.innerHTML = '<img src="./fotos/pix.png" alt="PIX">' +
+                                 '<p>Realize o pagamento por PIX no QR do valor: R$ ' + document.getElementById('totalCarrinho').textContent + '.</p>' +
+                                 '<p>Após, envie o comprovante pelo <a href="https://api.whatsapp.com/send?phone=5549998220444&text=Comprovante%20do%20pagamento%20via%20PIX%3A">Whatsapp</a>.</p>'
+            mensagem.classList.add('card-float'); // Adiciona uma classe para estilização do card flutuante
+            document.body.appendChild(mensagem);
+        } else if (formaPagamento === 'Dinheiro') {
+            // Mostrar imagem e mensagem para pagamento em dinheiro
+            var mensagem = document.createElement('div');
+            mensagem.innerHTML = '<a href="https://api.whatsapp.com/send?phone=5549998220444&text=Comprovante%20do%20pagamento%20via%20PIX%3A">Clique aqui para pagar com dinheiro</a><p>Agradeço desde já</p>';
+            mensagem.classList.add('card-float'); // Adiciona uma classe para estilização do card flutuante
+            document.body.appendChild(mensagem);
+        } else if (formaPagamento === 'cartao') {
+            // Mostrar imagem e mensagem para pagamento com cartão
+            var mensagem = document.createElement('div');
+            mensagem.innerHTML = '<a href="https://wa.me/554999326870?text=Ol%C3%A1%2C+quero+realizar+o+pagamento+por+cart%C3%A3o%2C+pode+me+enviar+o+link%3F">Clique aqui para pagar com cartão</a><p>Agradeço desde já</p>';
+            mensagem.classList.add('card-float'); // Adiciona uma classe para estilização do card flutuante
+            document.body.appendChild(mensagem);
+        }
     
-      limparCarrinho();
-      document.getElementById('pagamento').classList.add('d-none');
+        limparCarrinho();
+        document.getElementById('pagamento').classList.add('d-none');
     });
     </script>
      <script>
